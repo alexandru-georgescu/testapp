@@ -15,6 +15,7 @@ images = [
 @app.route('/')
 def index():
     url = random.choice(images)
+    
     return render_template('index.html', url=url)
  
 if __name__ == "__main__":
